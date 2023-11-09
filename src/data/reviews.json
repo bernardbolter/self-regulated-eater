@@ -1,0 +1,16 @@
+[
+  {
+    "id" : 1,
+    "name" : "Grechen L. George",
+    "titles" : "PhD, RDN",
+    "position" : "Associate Professor of Nutrition and Dietetics",
+    "quote" : "The authors incorporate their deep caring, empathy, and decades of experience into this book, and share true stories to connect with.  The Self-Regulated Eater reignites a calming joy in a person’s day-to-day interactions with food and self."
+  },
+  {
+    "id" : 2,
+    "name" : "Raya Almufti",
+    "titles" : "MD",
+    "position" : "psychiatrist and eating disorders specialist",
+    "quote" : "Beautifully laid out and engaging. The simulated therapist/client sessions make the process come alive and help the reader anticipate the common inner conflicts that arise when using your body’s hunger and fullness cues."
+  }
+]

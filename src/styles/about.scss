@@ -1,0 +1,70 @@
+.about-container {
+    width: 100%;
+    background: $back;
+}
+
+.about-bullets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 30px;
+
+    h1 {
+        color: $light;
+        font-size: 40px;
+        width: 94%;
+        margin: 25px 3% 20px;
+        text-align: center;
+    }
+}
+
+.about-bullet {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    margin: 7px 5%;
+
+    svg {
+        width: 30px;
+        height: 30px;
+        fill: $light;
+    }
+
+    p {
+        margin: 0 0 0 10px;
+        color: $light;
+        font-size: 16px;
+        width: calc(90% - 40px);
+        font-weight: 600;
+    }
+}
+
+.about-text {
+    background: $light-background;
+    width: 90%;
+    padding: 25px 5%;
+
+    h2 {
+        font-size: 20px;
+        text-align: center;
+        color: $nav;
+        font-weight: 600;
+        
+        span {
+        font-size: 14px;
+        font-weight: 200;
+        }
+    }
+
+    h3 {
+        font-size: 15px;
+        text-align: left;
+        color: $nav;
+        font-weight: 400;
+        padding: 0 10px 0 40px;
+        text-indent: 40px;
+    }
+}

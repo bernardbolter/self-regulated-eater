@@ -1,0 +1,70 @@
+.the-book-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $break) {
+        flex-direction: row-reverse;
+    }
+}
+
+.written-by {
+    margin: 0;
+    position: absolute;
+    top: 80px;
+    left: 180px;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    p {
+        color: $light;
+        font-size: 10px;
+        font-weight: 200;
+        margin: 0 0 0 20px;
+        padding: 0;
+    }
+
+    .written-indent {
+        margin: 0 0 0 13px;
+    }
+
+    h2 {
+        color: $light;
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+
+        span {
+            font-size: 10px;
+        }
+    }
+}
+
+.reviews-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    @media screen and (min-width: $break) {
+        padding: 170px 0 0 0;
+    }
+}
+
+.book-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $light-background;
+    margin-top: 170px;
+    position: relative;
+    z-index: 2;
+
+    @media screen and (min-width: $break) {
+        margin-top: 0;
+        padding: 100px 0 0 0;
+    }
+}
