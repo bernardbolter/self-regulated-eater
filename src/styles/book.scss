@@ -6,7 +6,7 @@
     .perspective {
       width: 100%;
       height: 100%;
-      perspective: 1000px;
+      perspective: 800px;
       transform-style: preserve-3d;
       overflow: hidden;
     }
@@ -41,7 +41,7 @@
   position: absolute;
   right: 0;
   top: 0;
-  left: -281px;
+  left: -280px;
   bottom: 0;
   margin: auto;
   transform: rotateY(-80deg) translateX(-10px);
@@ -75,27 +75,28 @@
   position: absolute;
   right: 20px;
   bottom: 20px;
-  padding: 15px 30px;
+  padding: 14px 28px;
   border: 1px solid $light;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  border-radius: 10px;
+  cursor: pointer;
 
   h2 {
-    color: $author-text;
+    color: $nav;
     font-size: 30px;
     font-family: $beb;
-    margin: 0;
+    margin: 5px 0 0;
     padding: 0;
   }
 
   p {
-    color: $light;
-    font-size: 8px;
-    margin: 0;
+    color: $nav;
+    font-size: 12px;
+    margin: -4px 0 0;
     padding: 0;
   }
 }

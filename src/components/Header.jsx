@@ -31,36 +31,39 @@ const Header = () => {
     const logoBack = logoBackRef.current
     const curve = curveRef.current
 
-    gsap.to(eater, { x: 92, y: -62, scrollTrigger: { 
-      trigger: eater,
-      scrub: 0.25,
-      start: 'top +=67',
-      end: 'top +=30'
-  }})
-  gsap.to(regulated, { x: 36, y: -34, scrollTrigger: { 
-      trigger: regulated,
-      scrub: 0.25,
-      start: 'top +=30',
-      end: 'top +=30'
-  }})
-  gsap.to(the, { x: 0, y: -10, scrollTrigger: { 
+  gsap.to(the, { x: 2, y: 2, scrollTrigger: { 
       trigger: the,
       scrub: 0.25,
       start: 'top +=10',
       end: 'top +=30'
   }})
+  gsap.to(regulated, { x: 30, y: -15, scrollTrigger: { 
+      trigger: regulated,
+      scrub: 0.25,
+      start: 'top +=15',
+      end: 'top +=30'
+  }})
+  gsap.to(eater, { x: 72, y: -33, scrollTrigger: { 
+      trigger: eater,
+      scrub: 0.25,
+      start: 'top +=30',
+      end: 'top +=45'
+  }})
+ 
+  
   gsap.to(solidCircle, { opacity: 0, x: -50, y: -50, scrollTrigger: { 
       trigger: solidCircle,
       scrub: 0.25,
       start: 'top -=100',
       end: 'top -=140'
   }})
-  gsap.to(borderCircle, { opacity: 0, x: -150, y: -150, scrollTrigger: { 
+  gsap.to(borderCircle, { opacity: 0, x: -100, y: -100, scrollTrigger: { 
       trigger: borderCircle,
       scrub: 0.25,
       start: 'top -=100',
-      end: 'top -=140'
+      end: 'top -=200'
   }})
+
   gsap.to(logoBack, { y: -29, scrollTrigger: { 
       trigger: logoBack,
       scrub: 0.25,
@@ -97,7 +100,7 @@ const Header = () => {
         </div>
       </div>
         <div className="nav-button-container">
-          <div id="nav-button" className={isOpen ? ' nav-button open' : 'nav-button'} onClick={() => openMenu}>
+          <div id="nav-button" className={isOpen ? ' nav-button open' : 'nav-button'} onClick={() => setIsOpen(!isOpen)}>
             <span></span>
             <span></span>
             <span></span>

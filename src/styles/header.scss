@@ -24,28 +24,44 @@
 }
 
 .logo-circle-solid {
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    top: -60px;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    top: -30px;
     left: -20px;
     background: $nav;
     position: fixed;
     z-index: 200;
     mix-blend-mode: screen;
     opacity: 1;
+
+    @media screen and (min-width: $break) {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        top: -60px;
+        left: -20px;
+    }
 }
 
 .logo-circle-border {
-    width: 220px;
-    height: 220px;
-    border-radius: 110px;
-    top: -65px;
-    left: -25px;
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    top: -33px;
+    left: -21px;
     background: transparent;
-    border: 1px solid $title;
+    border: 1px solid $back;
     position: absolute;
     z-index: 201;
+
+    @media screen and (min-width: $break) {
+        width: 220px;
+        height: 220px;
+        border-radius: 110px;
+        top: -65px;
+        left: -25px;
+    }
 }
 
 .logo-text {
@@ -54,7 +70,6 @@
     justify-content: flex-start;
     align-items: flex-start;
     color: $title;
-    font-size: 20px;
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 800;
     position: relative;
@@ -64,7 +79,7 @@
         margin: 0;
         position: fixed;
         z-index: 200;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .the {
@@ -74,11 +89,11 @@
 
     .self-regulated {
         left: 10px;
-        top: 28px;
+        top: 27px;
     }
 
     .eater {
-        left: 64px;
+        left: 71px;
         top: 45px;
     }
 }
@@ -144,9 +159,9 @@
     background: $nav;
     position: fixed;
     right: -190px;
-    padding: 50px 20px 20px;
+    padding: 70px 20px 20px;
     border-bottom-left-radius: 45px;
-    opacity: 0.8;
+    opacity: 0.92;
 
     h3 {
         color: $title;

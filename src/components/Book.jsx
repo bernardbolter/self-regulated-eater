@@ -39,7 +39,7 @@ const Book = () => {
         </div>
       </div>
       <div className="buy-button">
-        <h2>Buy Now</h2>
+        <h2>Purchase</h2>
         <p>From Amazon</p>
       </div>
     </>
