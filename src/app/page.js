@@ -5,13 +5,13 @@ import Contact from "@/components/Contact"
 import Header from "@/components/Header"
 import Heading from "@/components/Heading"
 import TheBolters from "@/components/TheBolters"
-import TheBook from "@/components/TheBook"
+import BookAndReviews from "@/components/BookAndReviews"
 
 const Home = () => {
   return (
     <main>
       <Header />
-      <TheBook />
+      <BookAndReviews />
       <Heading />
       <About />
       <TheBolters />

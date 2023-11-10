@@ -6,7 +6,7 @@
 @import './heading.scss';
 @import './reviews.scss';
 @import './the-bolter.scss';
-@import './the-book.scss';
+@import './book-and-reviews.scss';
 
 html {
     -webkit-font-smoothing: antialiased;
@@ -15,4 +15,6 @@ html {
 
 body {
     background: $back;
+    margin: 0;
+    padding: 0;
 }

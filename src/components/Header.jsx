@@ -2,17 +2,17 @@ import { useRef, useEffect, useState } from "react"
 import jump from "jump.js"
 import { gsap } from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-gsap.registerPlugin(ScrollTrigger)
 
 const Header = () => {
+  gsap.registerPlugin(ScrollTrigger)
   const [isOpen, setIsOpen] = useState(false)
-  const eater = useRef(null)
-  const regulated = useRef(null)
-  const the = useRef(null)
-  const solidCircle = useRef(null)
-  const borderCricle = useRef(null)
-  const logoBack = useRef(null)
-  const curve = useRef(null)
+  const eaterRef = useRef(null)
+  const regulatedRef = useRef(null)
+  const theRef = useRef(null)
+  const solidCircleRef = useRef(null)
+  const borderCircleRef = useRef(null)
+  const logoBackRef = useRef(null)
+  const curveRef = useRef(null)
 
   const openMenu = () => {
     setIsOpen(state => !state.isOpen)
@@ -23,44 +23,52 @@ const Header = () => {
   }
 
   useEffect(() => {
-    gsap.to(eater.value, { x: 92, y: -62, scrollTrigger: { 
-      trigger: eater.value,
+    const eater = eaterRef.current
+    const regulated = regulatedRef.current
+    const the = theRef.current
+    const solidCircle = solidCircleRef.current
+    const borderCircle = borderCircleRef.current
+    const logoBack = logoBackRef.current
+    const curve = curveRef.current
+
+    gsap.to(eater, { x: 92, y: -62, scrollTrigger: { 
+      trigger: eater,
       scrub: 0.25,
       start: 'top +=67',
       end: 'top +=30'
   }})
-  gsap.to(regulated.value, { x: 36, y: -34, scrollTrigger: { 
-      trigger: regulated.value,
+  gsap.to(regulated, { x: 36, y: -34, scrollTrigger: { 
+      trigger: regulated,
       scrub: 0.25,
       start: 'top +=30',
       end: 'top +=30'
   }})
-  gsap.to(the.value, { x: 0, y: -10, scrollTrigger: { 
-      trigger: the.value,
+  gsap.to(the, { x: 0, y: -10, scrollTrigger: { 
+      trigger: the,
       scrub: 0.25,
       start: 'top +=10',
       end: 'top +=30'
   }})
-  gsap.to(solidCircle.value, { opacity: 0, x: -50, y: -50, scrollTrigger: { 
-      trigger: solidCircle.value,
+  gsap.to(solidCircle, { opacity: 0, x: -50, y: -50, scrollTrigger: { 
+      trigger: solidCircle,
       scrub: 0.25,
       start: 'top -=100',
       end: 'top -=140'
   }})
-  gsap.to(borderCricle.value, { opacity: 0, x: -150, y: -150, scrollTrigger: { 
-      trigger: borderCricle.value,
+  gsap.to(borderCircle, { opacity: 0, x: -150, y: -150, scrollTrigger: { 
+      trigger: borderCircle,
       scrub: 0.25,
       start: 'top -=100',
       end: 'top -=140'
   }})
-  gsap.to(logoBack.value, { y: -29, scrollTrigger: { 
-      trigger: logoBack.value,
+  gsap.to(logoBack, { y: -29, scrollTrigger: { 
+      trigger: logoBack,
       scrub: 0.25,
       start: 'top -=100',
       end: 'top -=140'
   }})
-  gsap.to(curve.value, { y: -29, scrollTrigger: { 
-      trigger: curve.value,
+  gsap.to(curve, { y: -29, scrollTrigger: { 
+      trigger: curve,
       scrub: 0.25,
       start: 'top -=100',
       end: 'top -=140'
@@ -73,15 +81,15 @@ const Header = () => {
         <div className="logo-text">
           <div 
               className="logo-circle-solid"
-              ref={solidCircle}
+              ref={solidCircleRef}
             ></div>
-            <div className="logo-circle-border" ref={borderCricle}></div>
-            <h1 className="the" ref={the}>THE</h1>
-            <h1 className="self-regulated" ref={regulated}>SELF-REGULATED</h1>
-            <h1 className="eater" ref={eater}>EATER</h1>
-            <div className="logo-back" ref={logoBack}></div>
+            <div className="logo-circle-border" ref={borderCircleRef}></div>
+            <h1 className="the" ref={theRef}>THE</h1>
+            <h1 className="self-regulated" ref={regulatedRef}>SELF-REGULATED</h1>
+            <h1 className="eater" ref={eaterRef}>EATER</h1>
+            <div className="logo-back" ref={logoBackRef}></div>
           
-          <div className="logo-svg" ref={curve}>
+          <div className="logo-svg" ref={curveRef}>
             <svg viewBox="0 0 168 114">
               <path d="M168 66C-130 66 277 114 -0.0001688 114L-0.000174999 -1H168V66Z"/>
             </svg>

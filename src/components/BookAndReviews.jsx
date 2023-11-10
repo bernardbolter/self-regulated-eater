@@ -1,9 +1,9 @@
 import Reviews from './Reviews'
 import Book from './Book'
 
-const TheBook = () => {
+const BookAndReviews = () => {
   return (
-    <section clasNames="the-book-container" id="the-book">
+    <section className="the-book-container" id="the-book">
     <div className="written-by">
       <p>written by:</p>
       <h2 className="written-indent">Kay Bolter, <span>PhD</span></h2>
@@ -19,4 +19,4 @@ const TheBook = () => {
   )
 }
 
-export default TheBook
+export default BookAndReviews

@@ -55,13 +55,12 @@
 
 .book-container {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 660px;
     background: $light-background;
-    margin-top: 170px;
     position: relative;
     z-index: 2;
+    margin: 0;
+    padding: 100px 0 20px 0;
 
     @media screen and (min-width: $break) {
         margin-top: 0;

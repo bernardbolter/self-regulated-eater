@@ -25,10 +25,10 @@ const Reviews = () => {
     <div className="the-reviews" ref={containerRef}>
       <section 
           className="reviews-container"
-          style={{ 
-              // width: size.width * reviews.length,
-              transform: 'translateX(-100px)'
-          }}
+          // style={{ 
+          //     // width: size.width * reviews.length,
+          //     transform: 'translateX(-100px)'
+          // }}
       >
         {reviews.map((review, i) => (
           <div className="review" key={i}>
