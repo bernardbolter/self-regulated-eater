@@ -20,9 +20,10 @@
 }
 
 .book-front {
-  width: 400px;
-  height: 600px;
-  background: blue;
+  width: 280px;
+  height: 420px;
+  background: url('/book-front.jpg') no-repeat center center;
+  background-size: cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -33,21 +34,24 @@
 }
 
 .book-spine {
-  height: 600px;
-  width: 30px;
-  background: yellow;
+  height: 418px;
+  width: 26px;
+  background: url('/book-spine.jpg') no-repeat center center;
+  background-size: cover;
   position: absolute;
   right: 0;
-  left: -401px;
+  top: 0;
+  left: -281px;
   bottom: 0;
   margin: auto;
-  transform: rotateY(-80deg) translateX(-14px);
+  transform: rotateY(-80deg) translateX(-10px);
 }
 
 .book-back {
-  width: 400px;
-  height: 600px;
-  background: green;
+  width: 280px;
+  height: 420px;
+  background: url('/book-back.jpg') no-repeat center center;
+  background-size: cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -55,7 +59,7 @@
   right: 0;
   margin: auto;
   cursor: pointer;
-  transform: rotate(180deg) translateZ(-30px) translateX(5px);
+  transform: rotate(0deg) translateZ(-30px) translateX(-5px) scaleX(-1);
 }
 
 .rotate {
