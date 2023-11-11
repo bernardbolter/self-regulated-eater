@@ -5,10 +5,19 @@
     justify-content: center;
     align-items: center;
     background: $back;
+
+    @media screen and (min-width: $break) {
+        flex-direction: row;
+    }
 }
 
 .author {
-    display: block; 
+    display: block;
+    width: 100%;
+
+    @media screen and (min-width: $break) {
+        width: 50%;
+    }
 }
 
 .photo {
@@ -30,16 +39,31 @@
 
 .text {
     width: 80%;
-    padding: 80px 10% 10px;
-    margin: -120px 0 0;
+    padding: 10px 10% 10px;
+    margin: -110px 0 0;
     background: $light;
+}
+
+.author-name {
+    color: $light;
+    font-family: $beb;
+    text-shadow: 1px 1px 2px $nav;
+    font-size: 40px;
+    margin: 14px 0 0 40px;
+
+    span {
+        font-family: sans-serif;
+        font-size: 20px;
+    }
 }
 
 .text-paragraph {
     font-size: 14px;
-    line-height: 1.3em;
+    line-height: 1.5em;
     color: $author-text;
-    font-weight: 400;
+    font-weight: 500;
+    color: $nav;
+    padding: 0 10px;
 }
 
 .author-bold {
@@ -55,14 +79,23 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-end;
     background: $light;
     padding: 0 15% 30px;
+
+    p {
+        color: $nav;
+        font-size: 10px;
+        font-weight: 600;
+        margin: 0 0 4px;
+    }
 }
 
+
+
 .author-linked {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     margin: 0 10px 0 0;
 
     svg {

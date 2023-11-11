@@ -27,8 +27,8 @@ const Reviews = () => {
       <section 
           className="reviews-container"
           style={{ 
-              width: size.width < 768 ? size.width * reviews.length : (size.width * .5) * reviews.length,
-              transform: `translateX(-${size.width < 768 ? size.width * index : (size.width * .5) * index}px)`
+              width: size.width < 768 ? size.width * reviews.length : (size.width * .4) * reviews.length,
+              transform: `translateX(-${size.width < 768 ? size.width * index : (size.width * .4) * index}px)`
           }}
       >
         {reviews.map((review, i) => (

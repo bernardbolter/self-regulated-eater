@@ -1,10 +1,11 @@
 .contact-container {
     width: 100%;
-    background: $back;
+    background: $nav;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 30px 0;
 
     @media screen and (min-width: $break) {
         flex-direction: row;
