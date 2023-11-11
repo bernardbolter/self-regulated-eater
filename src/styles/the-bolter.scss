@@ -30,7 +30,7 @@
 
 .text {
     width: 80%;
-    padding: 80px 10% 40px;
+    padding: 80px 10% 10px;
     margin: -120px 0 0;
     background: $light;
 }
@@ -40,13 +40,42 @@
     line-height: 1.3em;
     color: $author-text;
     font-weight: 400;
-    text-align: center;
 }
 
-.bold {
+.author-bold {
     font-weight: 600;
 }
 
-.italic {
+.author-italic {
     font-style: italic;
+}
+
+.author-socials {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background: $light;
+    padding: 0 15% 30px;
+}
+
+.author-linked {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px 0 0;
+
+    svg {
+        width: 100%;
+    }
+}
+
+.author-email {
+    width: 20px;
+    height: 20px;
+
+    svg {
+        width: 100%;
+        fill: $nav;
+    }
 }

@@ -1,15 +1,16 @@
 import { useState, useRef, useEffect } from 'react'
 import reviews from '../data/reviews.json'
-// import useWindowSize from '../helpers/useWindowSize'
+import useWindowSize from '../helpers/useWindowSize'
 
 const Reviews = () => {
-  // const size = useWindowSize()
+  const size = useWindowSize()
+  console.log(size)
   const containerRef = useRef()
   let [index, setIndex] = useState(0)
 
   const clickRight = () => {
     if (index < reviews.length - 1) {
-      setIndex(state => state.index++)
+      setIndex(index + 1)
     } else {
       setIndex(0)
     }
@@ -17,7 +18,7 @@ const Reviews = () => {
   
   const clickLeft = () => {
     if (index > 0) {
-      setIndex(state => state.index--)
+      setIndex(index - 1)
     }
   }
 
@@ -25,10 +26,10 @@ const Reviews = () => {
     <div className="the-reviews" ref={containerRef}>
       <section 
           className="reviews-container"
-          // style={{ 
-          //     // width: size.width * reviews.length,
-          //     transform: 'translateX(-100px)'
-          // }}
+          style={{ 
+              width: size.width < 768 ? size.width * reviews.length : (size.width * .5) * reviews.length,
+              transform: `translateX(-${size.width < 768 ? size.width * index : (size.width * .5) * index}px)`
+          }}
       >
         {reviews.map((review, i) => (
           <div className="review" key={i}>

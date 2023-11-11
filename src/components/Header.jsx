@@ -108,10 +108,22 @@ const Header = () => {
           </div>
         </div>
         <nav className={isOpen ? 'nav nav-open' : 'nav'}>
-            <h3 onClick={() => jumpto('the-book')}>The Book</h3>
-            <h3 onClick={() => jumpto('about')}>About</h3>
-            <h3 onClick={() => jumpto('the-bolters')}>The Bolters</h3>
-            <h3 onClick={() => jumpto('contact')}>Contact</h3>
+            <h3 onClick={() => {
+              jumpto('the-book', { offset: +30})
+              setIsOpen(false)
+            }}>The Book</h3>
+            <h3 onClick={() => {
+              jumpto('about', { offset: +30})
+              setIsOpen(false)
+            }}>About</h3>
+            <h3 onClick={() => {
+              jumpto('the-bolters', { offset: +30})
+              setIsOpen(false)
+            }}>The Bolters</h3>
+            <h3 onClick={() => {
+              jumpto('contact', { offset: +30})
+              setIsOpen(false)
+            }}>Contact</h3>
         </nav>
     </section>
   )
