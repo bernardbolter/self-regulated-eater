@@ -7,6 +7,9 @@ const Contact = () => {
       <div className="news-container">
         <Newsletter />
         <div className="contact-info">
+          <h1>For speaking engagments, book club discussions, and interviews</h1>
+          <h1>email us at</h1>
+          <h1>contact@self-regulated-eater.com</h1>
           <h1>Or send us a message with our contact form.</h1>
         </div>
       </div>

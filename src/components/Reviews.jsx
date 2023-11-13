@@ -1,10 +1,9 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef } from 'react'
 import reviews from '../data/reviews.json'
 import useWindowSize from '../helpers/useWindowSize'
 
 const Reviews = () => {
   const size = useWindowSize()
-  console.log(size)
   const containerRef = useRef()
   let [index, setIndex] = useState(0)
 

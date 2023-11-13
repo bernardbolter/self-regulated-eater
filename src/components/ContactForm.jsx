@@ -70,6 +70,7 @@ const ContactForm = () => {
                 <TextField
                     fullWidth
                     id="name"
+                    className="form-input"
                     name="name"
                     label="Name"
                     type="name"
@@ -89,6 +90,7 @@ const ContactForm = () => {
                     id="email"
                     name="email"
                     label="Email"
+                    className="form-input"
                     value={formik.values.email}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
@@ -96,7 +98,9 @@ const ContactForm = () => {
                     helperText={formik.touched.email && formik.errors.email}
                     sx={{
                         background: "rgba(255,255,255,.1)",
-                        margin: '0 0 10px',
+                        color: "rgba(255,255,255,.8)",
+                        borderColor: "rgba(255,255,255,.8)",
+                        margin: '0 0 15px',
                         borderRadius: '4px',
                     }}
                 />
@@ -108,6 +112,7 @@ const ContactForm = () => {
                     name="message"
                     label="Message"
                     type="message"
+                    className="form-input"
                     value={formik.values.message}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}

@@ -2,8 +2,11 @@ import { useRef, useEffect, useState } from "react"
 import jump from "jump.js"
 import { gsap } from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger"
+import useWindowSize from "@/helpers/useWindowSize"
 
 const Header = () => {
+  const size = useWindowSize()
+  console.log(size)
   gsap.registerPlugin(ScrollTrigger)
   const [isOpen, setIsOpen] = useState(false)
   const eaterRef = useRef(null)
@@ -31,19 +34,19 @@ const Header = () => {
     const logoBack = logoBackRef.current
     const curve = curveRef.current
 
-  gsap.to(the, { x: 2, y: 2, scrollTrigger: { 
+  gsap.to(the, { x: size.width > 768 ? 4 : 2, y: size.width > 768 ? -11 : 2, scrollTrigger: { 
       trigger: the,
       scrub: 0.25,
       start: 'top +=10',
       end: 'top +=30'
   }})
-  gsap.to(regulated, { x: 30, y: -15, scrollTrigger: { 
+  gsap.to(regulated, { x: size.width > 768 ? 45 : 30, y: size.width > 768 ? -35 : -15, scrollTrigger: { 
       trigger: regulated,
       scrub: 0.25,
       start: 'top +=15',
       end: 'top +=30'
   }})
-  gsap.to(eater, { x: 72, y: -33, scrollTrigger: { 
+  gsap.to(eater, { x: size.width > 768 ? 105 :72, y: size.width > 768 ? -60 : -33, scrollTrigger: { 
       trigger: eater,
       scrub: 0.25,
       start: 'top +=30',
@@ -76,7 +79,7 @@ const Header = () => {
       start: 'top -=100',
       end: 'top -=140'
   }})
-  }, [])
+  }, [size])
 
   return (
       <section className="header">
