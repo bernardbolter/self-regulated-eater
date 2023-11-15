@@ -83,6 +83,16 @@
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   border-radius: 10px;
   cursor: pointer;
+  text-decoration: none;
+  transform: scale(1);
+  transition: all .5s ease-in-out;
+  opacity: .9;
+
+  &:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    transition: all .5s ease-in-out;
+  }
 
   h2 {
     color: $nav;

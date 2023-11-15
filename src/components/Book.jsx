@@ -38,10 +38,13 @@ const Book = () => {
           </div>
         </div>
       </div>
-      <div className="buy-button">
+      <a
+        href="https://www.amazon.com/Self-Regulated-Eater-Kay-Bolter/dp/1643437186/ref=sr_1_1?crid=1ZA4QX1T0LIXI&keywords=self+regulated+eater+book&qid=1699991628&sprefix=self+regulated+eater+book%2Caps%2C185&sr=8-1"
+        className="buy-button"
+      >
         <h2>Purchase</h2>
         <p>From Amazon</p>
-      </div>
+      </a>
     </>
   )
 }
